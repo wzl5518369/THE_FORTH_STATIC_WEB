@@ -1,0 +1,343 @@
+@import (css) "../css/base.css";
+
+.nav_bar1 {
+  //background-color: red;
+  .nav_content {
+    height: 100px;
+    display: flex;
+    margin-top: 15px;
+    //左侧logo
+    .logo1 {
+      flex: 1;
+      //background-color: green;
+      position: relative;
+      padding: 10px 15px; //控制图片的位置
+      img {
+        position: absolute;
+        width: 193px;
+        height: 63px;
+
+      }
+    }
+
+    //中间搜索框
+    .sc {
+      flex: 3;
+      //background-color: tomato;
+      //position: relative;
+
+
+      .circle1 {
+        width: 400px;
+        height: 40px;
+        //position: absolute; 这个和margin重复
+        //background-color: green;
+        border-radius: 20px; //形成半圆形
+        border: 2px solid gray;
+        box-sizing: border-box;
+        margin: 12px auto;
+        display: flex;
+
+
+        .words1 {
+          //background-color: gray;
+          //position: absolute;
+          top: -4px;
+          width: 66px;
+          height: 36px; //与父节点40高度预留2*2px的高度
+          border-radius: 18px;
+          text-align: center;
+          line-height: 36px;
+          display: flex; //控制箭头和“全部”在一行
+
+          .wc1 {
+            flex: 1;
+            text-align: center;
+            line-height: 36px;
+
+            &::before {
+              //background-color: red;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .text1 {
+          flex: 3;
+          //background-color: red;
+          input {
+            border: none; //去除文本框
+            width: 100%;
+            height: 100%-4px;
+            background-color: transparent; //使文本框变透明
+            &:focus {
+              outline: none; //去除获取边框显示
+            }
+          }
+        }
+
+        .search1 {
+          flex: 1;
+          background-color: #51b257;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          display: flex;
+          text-align: center;
+          line-height: 36px;
+
+          .s2 {
+            //text-align: right;
+            cursor: pointer; //指针变小手
+            width: 100%;
+
+            &::before {
+
+            }
+
+            a {
+              //color: gray;
+              text-decoration: none;
+            }
+          }
+
+        }
+      }
+
+    }
+
+    //登陆
+    .login1 {
+      flex: 1;
+      //background-color: gray;
+      //display: flex;
+      //justify-content: flex-end;
+      display: flex;
+      justify-content: flex-end;
+
+      .intro {
+        margin: 10px;
+        height: 50px;
+        //background-color: red;
+        display: flex;
+        position: relative;
+
+        .load1 {
+          //background-color: red;
+          //width: 71px;
+          height: 32px;
+          font-size: 16px;
+          text-align: center;
+          line-height: 32px;
+          //font-weight: bold;
+          //margin-right: 10px;
+
+        }
+
+        .image1 {
+          //background-color: green;
+          //width: 32px;
+          //height: 32px;
+          //margin-right: 10px;
+          margin-left: 15px;
+
+          img {
+            width: 32px;
+            height: 32px;
+            border-radius: 32px;
+          }
+        }
+
+        &:hover {
+          .operation_pane {
+            height: 100px;
+            display: block;
+          }
+        }
+
+        .operation_pane {
+          width: 150px;
+          height: 650px;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          position: absolute;
+          top: 45px;
+          right: 20px;
+          display: none;
+          padding: 0 15px;
+
+          ul {
+            list-style: none;
+
+            li {
+
+              &.line { //加下划线
+                border-bottom: 1px solid gray;
+              }
+
+              //border: 1px solid gray;
+              line-height: 34px;
+              font-size: 12px;
+              color: #666;
+              //border-bottom: 1px solid red;
+              .bb1 {
+                border-bottom: 1px solid red;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+//导航
+.bottom {
+  //width: 1205px; 用bx代替固定宽度
+  height: 40px;
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-between;
+
+  .left {
+    flex: 1;
+    //width: 264px;
+    height: 40px;
+    padding: 0 15px;
+
+    .menus {
+      display: flex;
+      list-style: none; //清除点
+
+      li {
+        line-height: 40px;
+        font-size: 18px;
+        margin-left: 10px;
+
+        a {
+          text-decoration: none; //清除字体的下划线
+          color: #333;
+          position: relative;
+
+          &::before {  //绿下划线以伪元素的方式加
+            content: "";//将内容置空
+            display: block; //改为块级
+            width: 60%;
+            height: 5px; //设置绿框厚度
+            background-color: green;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+
+          }
+
+          &.active1,&:hover{
+          color: #51b257;
+          }
+        }
+      }
+    }
+  }
+
+  .gift1 {
+    flex: 1;
+    //margin:0 auto;
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      .g1,.p1 {
+        &::before {
+          font-size: 18px;
+          margin-right: 5px;
+        }
+      }
+
+      li {
+        line-height: 40px;
+        font-size: 18px;
+        margin-left: 10px;
+        //text-align: right;
+      }
+    }
+  }
+
+}
+
+//banner图
+.banner1{
+  position: relative;
+  //display: flex;
+  height: 420px;
+
+  .pic{
+    //background-color: red;
+  //  //display: flex;
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    ul{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      li{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        a{
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color:white;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .desc1{
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    width: 280px;
+    height: 380px;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    ul{
+      list-style: none;
+      padding: 20px 35px;
+      li{
+        //background-color: red;
+
+        line-height: 45px;
+        a{
+          color: white;
+          text-decoration: none;
+          position: relative;
+
+          &:hover{
+            color: #51b257;
+            &::before{
+              content: "";
+              position: absolute;
+              //background-color: green;
+              border: 10px solid transparent;
+              border-right-color: #51b257;
+              left: -30px;
+              top: 50%;
+              transform: translateY(-50%);
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
