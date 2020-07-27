@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>2020引擎计划第四组作业</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <!--顶部内容-->
@@ -51,9 +51,9 @@
     <div class="left">
         <ul class="menus">
             <li><a class="active1" href="#">首页</a></li>
-            <li><a href="#">讲师</a></li>
-            <li><a href="#">课程</a></li>
-            <li><a href="./articleList.html">新闻</a></li>
+            <li><a href="homesection/teacher_list.html">讲师</a></li>
+            <li><a href="homesection/course_list.html">课程</a></li>
+            <li><a href="homesection/articleList.html">新闻</a></li>
         </ul>
     </div>
     <div class="gift1">
@@ -82,106 +82,253 @@
         </ul>
     </div>
 </div>
-<!--热门好课-->
-<div id="good_class" class="bx">
-    <p class="title-nav">- 热 . 门 . 好 . 客 -</p>
+
+
+
+<!--3. 热门好课-->
+<div id="nav_best_course" class="bx">
+    <p class="title-nav">- 热 . 门 . 好 . 课 -</p>
     <div class="content_nav">
-        <a href="#">更多></a>
+        <a href="./homesection/course_list.html">更多></a>
         <ul>
-            <li class="t_card">
-
-                <div class="left">
-                    <a href="#">
-                        <img class="t_header" src="./assets/teacher.png" alt="t1">
-                        <div class="t_name">曹志皓老师</div>
+            <li>
+                <span class="tag_cx">推荐</span>
+                <div class="pic">
+                    <a href="./homesection/course_detail.html">
+                        <img src="./assets/course_img.png" alt="课程封面" width="218" height="130">
                     </a>
                 </div>
-                <div class="right">
-                    <div class="t_tag">联通总部CTO</div>
-                    <div class="t_dec">
-                        代领团队去了10余所幼儿园, 教会了小朋友很多道理;
-                        小朋友含泪拿出了自己的糖果
+                <div class="main">
+                    <div class="title">
+                        <a href="#">Python大数据+人工智能 </a>
                     </div>
+                    <div class="details">
+                        <div class="point">
+                                <span>
+                                    <i class="star_gray"></i>
+                                    <i class="star_yel" style="width:50%"></i>
+                                </span>
+                            <em>4.7</em>
+                        </div>
+                        <div class="good iconfont icon-icon_good"> 800人好评</div>
+                    </div>
+
                 </div>
             </li>
-            <li class="t_card">
-
-                <div class="left">
-                    <a href="#">
-                        <img class="t_header" src="./assets/teacher.png" alt="t1">
-                        <div class="t_name">张三疯老师</div>
+            <li>
+                <span class="tag_cx">推荐</span>
+                <div class="pic">
+                    <a href="./homesection/course_detail.html">
+                        <img src="./assets/course_img.png" alt="课程封面" width="218" height="130">
                     </a>
                 </div>
-                <div class="right">
-                    <div class="t_tag">联通总部CTO</div>
-                    <div class="t_dec">
-                        代领团队去了10余所幼儿园, 教会了小朋友很多道理;
-                        小朋友含泪拿出了自己的糖果
+                <div class="main">
+                    <div class="title">
+                        <a href="#">Python大数据+人工智能 </a>
                     </div>
+                    <div class="details">
+                        <div class="point">
+                                <span>
+                                    <i class="star_gray"></i>
+                                    <i class="star_yel" style="width:50%"></i>
+                                </span>
+                            <em>4.7</em>
+                        </div>
+                        <div class="good iconfont icon-icon_good"> 800人好评</div>
+                    </div>
+
                 </div>
             </li>
-            <li class="t_card">
-
-                <div class="left">
-                    <a href="#">
-                        <img class="t_header" src="./assets/teacher.png" alt="t1">
-                        <div class="t_name">张三疯老师</div>
+            <li>
+                <span class="tag_cx">推荐</span>
+                <div class="pic">
+                    <a href="./homesection/course_detail.html">
+                        <img src="./assets/course_img.png" alt="课程封面" width="218" height="130">
                     </a>
                 </div>
-                <div class="right">
-                    <div class="t_tag">联通总部CTO</div>
-                    <div class="t_dec">
-                        代领团队去了10余所幼儿园, 教会了小朋友很多道理;
-                        小朋友含泪拿出了自己的糖果
+                <div class="main">
+                    <div class="title">
+                        <a href="#">Python大数据+人工智能 </a>
                     </div>
+                    <div class="details">
+                        <div class="point">
+                                <span>
+                                    <i class="star_gray"></i>
+                                    <i class="star_yel" style="width:50%"></i>
+                                </span>
+                            <em>4.7</em>
+                        </div>
+                        <div class="good iconfont icon-icon_good"> 800人好评</div>
+                    </div>
+
                 </div>
             </li>
-            <li class="t_card">
-
-                <div class="left">
-                    <a href="#">
-                        <img class="t_header" src="./assets/teacher.png" alt="t1">
-                        <div class="t_name">张三疯老师</div>
+            <li>
+                <span class="tag_cx">推荐</span>
+                <div class="pic">
+                    <a href="./homesection/course_detail.html">
+                        <img src="assets/course_img.png" alt="课程封面" width="218" height="130">
                     </a>
                 </div>
-                <div class="right">
-                    <div class="t_tag">联通总部CTO</div>
-                    <div class="t_dec">
-                        代领团队去了10余所幼儿园, 教会了小朋友很多道理;
-                        小朋友含泪拿出了自己的糖果
+                <div class="main">
+                    <div class="title">
+                        <a href="#">Python大数据+人工智能 </a>
                     </div>
+                    <div class="details">
+                        <div class="point">
+                                <span>
+                                    <i class="star_gray"></i>
+                                    <i class="star_yel" style="width:50%"></i>
+                                </span>
+                            <em>4.7</em>
+                        </div>
+                        <div class="good iconfont icon-icon_good"> 800人好评</div>
+                    </div>
+
                 </div>
             </li>
-            <li class="t_card">
-
-                <div class="left">
-                    <a href="#">
-                        <img class="t_header" src="./assets/teacher.png" alt="t1">
-                        <div class="t_name">张三疯老师</div>
+            <li>
+                <span class="tag_cx">推荐</span>
+                <div class="pic">
+                    <a href="./homesection/course_detail.html">
+                        <img src="assets/course_img.png" alt="课程封面" width="218" height="130">
                     </a>
                 </div>
-                <div class="right">
-                    <div class="t_tag">联通总部CTO</div>
-                    <div class="t_dec">
-                        代领团队去了10余所幼儿园, 教会了小朋友很多道理;
-                        小朋友含泪拿出了自己的糖果
+                <div class="main">
+                    <div class="title">
+                        <a href="#">Python大数据+人工智能 </a>
                     </div>
+                    <div class="details">
+                        <div class="point">
+                                <span>
+                                    <i class="star_gray"></i>
+                                    <i class="star_yel" style="width:50%"></i>
+                                </span>
+                            <em>4.7</em>
+                        </div>
+                        <div class="good iconfont icon-icon_good"> 800人好评</div>
+                    </div>
+
                 </div>
             </li>
-            <li class="t_card">
-
-                <div class="left">
-                    <a href="#">
-                        <img class="t_header" src="./assets/teacher.png" alt="t1">
-                        <div class="t_name">张三疯老师</div>
+            <li>
+                <span class="tag_cx">推荐</span>
+                <div class="pic">
+                    <a href="./homesection/course_detail.html">
+                        <img src="assets/course_img.png" alt="课程封面" width="218" height="130">
                     </a>
                 </div>
-                <div class="right">
-                    <div class="t_tag">联通总部CTO</div>
-                    <div class="t_dec">
-                        代领团队去了10余所幼儿园, 教会了小朋友很多道理;
-                        小朋友含泪拿出了自己的糖果
+                <div class="main">
+                    <div class="title">
+                        <a href="#">Python大数据+人工智能 </a>
                     </div>
+                    <div class="details">
+                        <div class="point">
+                                <span>
+                                    <i class="star_gray"></i>
+                                    <i class="star_yel" style="width:50%"></i>
+                                </span>
+                            <em>4.7</em>
+                        </div>
+                        <div class="good iconfont icon-icon_good"> 800人好评</div>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <span class="tag_cx">推荐</span>
+                <div class="pic">
+                    <a href="./homesection/course_detail.html">
+                        <img src="assets/course_img.png" alt="课程封面" width="218" height="130">
+                    </a>
+                </div>
+                <div class="main">
+                    <div class="title">
+                        <a href="#">Python大数据+人工智能 </a>
+                    </div>
+                    <div class="details">
+                        <div class="point">
+                                <span>
+                                    <i class="star_gray"></i>
+                                    <i class="star_yel" style="width:50%"></i>
+                                </span>
+                            <em>4.7</em>
+                        </div>
+                        <div class="good iconfont icon-icon_good"> 800人好评</div>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <span class="tag_cx">推荐</span>
+                <div class="pic">
+                    <a href="./homesection/course_detail.html">
+                        <img src="assets/course_img.png" alt="课程封面" width="218" height="130">
+                    </a>
+                </div>
+                <div class="main">
+                    <div class="title">
+                        <a href="#">Python大数据+人工智能 </a>
+                    </div>
+                    <div class="details">
+                        <div class="point">
+                                <span>
+                                    <i class="star_gray"></i>
+                                    <i class="star_yel" style="width:50%"></i>
+                                </span>
+                            <em>4.7</em>
+                        </div>
+                        <div class="good iconfont icon-icon_good"> 800人好评</div>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <span class="tag_cx">推荐</span>
+                <div class="pic">
+                    <a href="./homesection/course_detail.html">
+                        <img src="assets/course_img.png" alt="课程封面" width="218" height="130">
+                    </a>
+                </div>
+                <div class="main">
+                    <div class="title">
+                        <a href="#">Python大数据+人工智能 </a>
+                    </div>
+                    <div class="details">
+                        <div class="point">
+                                <span>
+                                    <i class="star_gray"></i>
+                                    <i class="star_yel" style="width:50%"></i>
+                                </span>
+                            <em>4.7</em>
+                        </div>
+                        <div class="good iconfont icon-icon_good"> 800人好评</div>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <span class="tag_cx">推荐</span>
+                <div class="pic">
+                    <a href="./homesection/course_detail.html">
+                        <img src="assets/course_img.png" alt="课程封面" width="218" height="130">
+                    </a>
+                </div>
+                <div class="main">
+                    <div class="title">
+                        <a href="#">Python大数据+人工智能 </a>
+                    </div>
+                    <div class="details">
+                        <div class="point">
+                                <span>
+                                    <i class="star_gray"></i>
+                                    <i class="star_yel" style="width:50%"></i>
+                                </span>
+                            <em>4.7</em>
+                        </div>
+                        <div class="good iconfont icon-icon_good"> 800人好评</div>
+                    </div>
+
                 </div>
             </li>
         </ul>

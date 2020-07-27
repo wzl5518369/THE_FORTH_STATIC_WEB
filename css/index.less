@@ -1,4 +1,4 @@
-@import (css) "./css/base.css";
+@import (css) "base.css";
 
 .nav_bar1 {
   //background-color: red;
@@ -224,16 +224,18 @@
             display: block; //改为块级
             width: 60%;
             height: 5px; //设置绿框厚度
-            background-color: green;
+            //background-color: green;
             position: absolute;
             bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
 
           }
-
+//display: none;
           &.active1,&:hover{
             color: #51b257;
+            &::before {
+              background-color: green;}
           }
         }
       }
@@ -334,6 +336,151 @@ min-width: 1206px;
               top: 50%;
               transform: translateY(-50%);
 
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 3. 热门好课
+#nav_best_course {
+  padding-top: 40px;
+
+  .title-nav {
+    text-align: center;
+    font-size: 28px;
+    color: #780000;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .content_nav {
+    position: relative;
+    margin-top: 20px;
+    //height: 252px;
+    > a {
+      position: absolute;
+      top: -50px;
+      right: 0;
+      color: #400000;
+
+      &:hover {
+        color: #e1251b;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      li {
+        width: 218px;
+        height: 252px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        margin-top: 10px;
+        overflow: hidden;
+        position: relative;
+
+        &:first-child {
+          margin-left: 1px;
+        }
+
+        &:hover {
+          box-shadow: 0 0 10px #ccc;
+
+          img {
+            transition: all 0.8s ease;
+            transform: scale(1.1, 1.1);
+          }
+        }
+
+        .tag_cx {
+          line-height: 23px;
+          color: #fff;
+          width: 48px;
+          padding-left: 10px;
+          background: url(../assets/layout_css_sprites.png) no-repeat -16px -57px;
+          position: absolute;
+          top: 5px;
+          z-index: 9;
+          font-size: 12px;
+        }
+
+        .pic {
+          overflow: hidden;
+          width: 218px;
+          height: 130px;
+        }
+
+        .main {
+          padding: 10px;
+
+          .title {
+            font-size: 14px;
+            line-height: 21px;
+            height: 44px;
+            word-break: break-all;
+            overflow: hidden;
+
+            > a {
+              color: #333;
+
+              &:hover {
+                color: #e1251b;
+              }
+            }
+          }
+
+          .details {
+            color: #777986;
+            font-size: 12px;
+            height: 30px;
+
+            .point {
+              line-height: 30px;
+
+              span {
+                display: inline-block;
+                width: 57px;
+                height: 10px;
+                overflow: hidden;
+                position: relative;
+
+                .star_gray {
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  z-index: 10;
+                  display: inline-block;
+                  width: 57px;
+                  height: 10px;
+                  background: url('../assets/layout_css_sprites.png') no-repeat -91px -58px;
+                }
+
+                .star_yel {
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  z-index: 11;
+                  display: inline-block;
+                  width: 57px;
+                  height: 10px;
+                  background: url('../assets/layout_css_sprites.png') no-repeat -10px -158px;
+                }
+              }
+
+              em {
+                font-style: normal;
+              }
+            }
+
+            .good {
+              padding-right: 10px;
+              line-height: 27px;
             }
           }
         }
@@ -575,19 +722,19 @@ min-width: 1206px;//控制外层盒子比固定宽度大。
         box-sizing: border-box;
 //position: absolute;
         .right_dd_a1 {
-          background: url(./assets/layout_css_sprites2.png) -112px -74px;
+          background: url(../assets/layout_css_sprites2.png) -112px -74px;
           display: inline-block;
           width: 46px;
           height: 46px;
           margin-right: 30px;
 
           &:hover {
-            background: url(./assets/layout_css_sprites2.png) -154px -174px;
+            background: url(../assets/layout_css_sprites2.png) -154px -174px;
           }
         }
 
         .right_dd_a2 {
-          background: url(./assets/layout_css_sprites2.png) -220px -174px;
+          background: url(../assets/layout_css_sprites2.png) -220px -174px;
           display: inline-block;
           width: 46px;
           height: 46px;
@@ -605,7 +752,7 @@ min-width: 1206px;//控制外层盒子比固定宽度大。
 
           &:hover {
 
-            background: url(./assets/layout_css_sprites2.png) -286px -174px;
+            background: url(../assets/layout_css_sprites2.png) -286px -174px;
 
             div {
               display: block;
